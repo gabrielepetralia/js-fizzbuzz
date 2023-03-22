@@ -3,3 +3,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: rgb(0, 73, 121);
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

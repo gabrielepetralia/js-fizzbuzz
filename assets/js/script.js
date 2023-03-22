@@ -1,13 +1,22 @@
+const container = document.querySelector(".container");
+let inner;
+
 for(let i=1;i<=100;i++)
 {
+  const cell= document.createElement("div");
+  cell.classList.add("cell");
+  
   if(!(i%3) && !(i%5))
   {
-    console.log("FizzBuzz");
+    inner = "FizzBuzz";
   } else if(!(i%3)) {
-    console.log("Fizz");
+    inner = "Fizz";
   } else if(!(i%5)) {
-    console.log("Buzz");
+    inner = "Buzz"
   } else {
-    console.log(i);
+    inner = i;
   }  
+
+  cell.append(inner)
+  container.append(cell);
 }
